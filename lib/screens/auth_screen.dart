@@ -167,6 +167,7 @@ class _AuthScreenState extends State<AuthScreen> {
                     padding: const EdgeInsets.symmetric(horizontal: 25),
                     child: Container(
                       child: TextFormField(
+                        obscureText: true,
                         validator: (val) {
                           if (val!.isEmpty || val.length < 8) {
                             return 'Please enter your  Password';
@@ -196,6 +197,7 @@ class _AuthScreenState extends State<AuthScreen> {
                     padding: const EdgeInsets.symmetric(horizontal: 25),
                     child: Container(
                       child: TextFormField(
+                        obscureText: true,
                         validator: (value) {
                           if (value !=_passwordController.text) {
                             return 'Password not match! ';

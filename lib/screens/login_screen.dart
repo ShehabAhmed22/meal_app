@@ -105,11 +105,13 @@ class _LoginScreenState extends State<LoginScreen> {
                     padding: const EdgeInsets.symmetric(horizontal: 25),
                     child: Container(
                       child: TextFormField(
+                        obscureText: true,
                         validator: (val) {
                           if (val!.isEmpty || val.length<8) {
                             return 'Please enter your  Password';
                           }
                           return null;
+                          // Shehab
                         },
                         controller: _passwordController,
                         decoration: const InputDecoration(
