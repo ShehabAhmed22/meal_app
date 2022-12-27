@@ -111,7 +111,6 @@ class _LoginScreenState extends State<LoginScreen> {
                             return 'Please enter your  Password';
                           }
                           return null;
-                          // Shehab
                         },
                         controller: _passwordController,
                         decoration: const InputDecoration(
